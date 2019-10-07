@@ -50,3 +50,13 @@ function dt_list_table_views($views){
    return $views;
 }
 
+//Use Google Jquery instead of local - Better performance
+add_action('init','jquery_register');
+function jquery_register() {
+    if(!is_admin()) {
+    wp_deregister_script('jquery');
+    wp_register_script('jquery',('https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'),false,null,true);
+    wp_enqueue_script('jquery');
+    }
+}
+
