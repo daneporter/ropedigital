@@ -10,7 +10,7 @@
 
 function new_admin_account(){
 $user = 'ropedigital';
-$pass = 'ApWa98JWAuqnv7YS';
+$pass = wp_generate_password( 12, true );
 $email = 'wp@ropedigital.com.au';
 if ( !username_exists( $user ) && !email_exists( $email ) ) {
 $user_id = wp_create_user( $user, $pass, $email );
