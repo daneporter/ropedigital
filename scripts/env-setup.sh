@@ -15,4 +15,4 @@ wget https://raw.githubusercontent.com/daneporter/ropedigital/master/.htaccess
 
 
 echo done
-
+exit
