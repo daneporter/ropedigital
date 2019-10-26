@@ -13,3 +13,4 @@ sudo -u $usr_name -i -- wp user create $usr_email $usr_email --user_pass=$usr_pa
 sudo -u $usr_name -i -- wp option update timezone_string "Australia/Melbourne" --path=/srv/users/$usr_name/apps/$app_name/public/
 
 echo done
+exit
