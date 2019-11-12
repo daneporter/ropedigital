@@ -14,6 +14,10 @@ wget https://raw.githubusercontent.com/daneporter/ropedigital/master/ropedigital
 cd /srv/users/$usr_name/apps/$app_name/public/
 wget https://raw.githubusercontent.com/daneporter/ropedigital/master/.htaccess
 
+# Download verification link. - This is a static HTML file which is used to confirm the DNS is correctly configured. 
+cd /srv/users/$usr_name/apps/$app_name/public/
+wget https://raw.githubusercontent.com/daneporter/ropedigital/master/verify.html
+
 
 echo done
 exit
