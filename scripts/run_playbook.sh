@@ -22,12 +22,12 @@ playbook=$8
 
 sshpass -p $password ssh $username@$ip <<'ENDSSH'
 cd /var/opt/
-wget -q https://raw.githubusercontent.com/daneporter/ropedigital/master/playbooks/elementor-script.sh -O elementor-script.sh
-chmod 700 elementor-script.sh
+wget -q https://raw.githubusercontent.com/daneporter/ropedigital/master/playbooks/elementor_script.sh -O elementor_script.sh
+chmod 700 elementor_script.sh
 ENDSSH
 
 #Invoke Playbook Setup script on remote host
-sshpass -p $password ssh $username@$ip  ". /var/opt/elementor-script.sh $app_name $usr_name" <<'ENDSSH'
+sshpass -p $password ssh $username@$ip  ". /var/opt/elementor_script.sh $app_name $usr_name" <<'ENDSSH'
 exit
 ENDSSH
 exit
