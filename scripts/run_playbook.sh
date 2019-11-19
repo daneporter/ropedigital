@@ -16,17 +16,18 @@ app_name=$4
 usr_name=$5
 email=$6
 usr_pw=$7
+playbook=$8
 
 #Get copies of the latest scripts onto the remote host
 
 sshpass -p $password ssh $username@$ip <<'ENDSSH'
 cd /var/opt/
-wget -q https://raw.githubusercontent.com/daneporter/ropedigital/master/playbooks/$playbook-script.sh -O $playbook-script.sh
-chmod 700 $playbook-script.sh
+wget -q https://raw.githubusercontent.com/daneporter/ropedigital/master/playbooks/${playbook}-script.sh -O ${playbook}-script.sh
+chmod 700 ${playbook}-script.sh
 ENDSSH
 
 #Invoke Playbook Setup script on remote host
-sshpass -p $password ssh $username@$ip  ". /var/opt/$playbook-script.sh $app_name $usr_name" <<'ENDSSH'
+sshpass -p $password ssh $username@$ip  ". /var/opt/${playbook}-script.sh $app_name $usr_name" <<'ENDSSH'
 exit
 ENDSSH
 exit
