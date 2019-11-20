@@ -55,3 +55,6 @@ RewriteRule . /index.php [L]
 	Header unset ETag
 </IfModule>
 FileETag None
+
+# disable directory browsing
+Options All -Indexes
