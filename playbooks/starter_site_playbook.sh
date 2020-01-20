@@ -23,6 +23,7 @@ sudo -u $usr_name -i -- wp theme install astra --activate --path=/srv/users/$usr
 sudo -u $usr_name -i -- wp plugin install "https://ropedigital.com.au/plugins/astra-addon.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 #sudo -u $usr_name -i -- wp plugin install "https://ropedigital.com.au/plugins/powerpack-elements.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp plugin install astra-sites --activate --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp brainstormforce license activate astra-addon f29d834f5cad15f2845fdc6bf9469875
 
 
 
