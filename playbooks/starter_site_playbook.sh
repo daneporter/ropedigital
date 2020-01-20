@@ -24,6 +24,25 @@ sudo -u $usr_name -i -- wp plugin install "https://ropedigital.com.au/plugins/as
 #sudo -u $usr_name -i -- wp plugin install "https://ropedigital.com.au/plugins/powerpack-elements.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp plugin install astra-sites --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp brainstormforce license activate astra-addon f29d834f5cad15f2845fdc6bf9469875
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_AUTHOR 'Rope Digital'
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_AUTHOR 'Agency Author'
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_AUTHOR_URL 'www.your-website-url.com'
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_LICENCE 'www.your-get-licence-url.com'
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_NAME 'Fastest WP Theme'
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_DESCRIPTION 'WordPress theme'
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_SCREENSHOT 'www.your-theme-screenshot-url.com'            
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_PRO_NAME 'Pro Addon'         
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_PRO_DESCRIPTION 'Pro Addon extends the features of theme'
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_SITES_NAME 'Ready Sites'       
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_SITES_DESCRIPTION 'Library of Ready sites'
+sudo -u $usr_name -i -- wp config set AST_WL_BSF_LW_SB_NAME 'Custom Sidebar Manager'      
+sudo -u $usr_name -i -- wp config set AST_WL_BSF_LW_SB_DESCRIPTION 'Manage your Sidebar'    
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_HOOKS_NAME 'Hooks for theme'           
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_HOOKS_DESCRIPTION 'Use hooks to put custom code' 
+sudo -u $usr_name -i -- wp config set AST_WL_BSF_CUSTOM_FONTS_NAME 'My Custom Fonts' 
+sudo -u $usr_name -i -- wp config set AST_WL_BSF_CUSTOM_FONTS_DESCRIPTION 'Add custom fonts' 
+sudo -u $usr_name -i -- wp config set AST_WL_CUSTOM_TYPEKIT_FONTS_NAME 'My fonts' 
+sudo -u $usr_name -i -- wp config set AST_WL_CUSTOM_TYPEKIT_FONTS_DESCRIPTION 'Add custom typekit font' 
 
 
 
