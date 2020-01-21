@@ -42,6 +42,7 @@ sudo -u $usr_name -i -- wp config set AST_WL_BSF_CUSTOM_FONTS_NAME 'My Custom Fo
 sudo -u $usr_name -i -- wp config set AST_WL_BSF_CUSTOM_FONTS_DESCRIPTION 'Add custom fonts' --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set AST_WL_CUSTOM_TYPEKIT_FONTS_NAME 'My fonts' --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set AST_WL_CUSTOM_TYPEKIT_FONTS_DESCRIPTION 'Add custom typekit font' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set WP_ASTRA_WHITE_LABEL 'true' --path=/srv/users/$usr_name/apps/$app_name/public/
 
 
 
