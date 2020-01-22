@@ -3,7 +3,7 @@
 ## the target remote hosting server for the purpose of installing a requested Playbook on an existing WP instance.
 ## Assumes a hosting instance has been created using serverpilot
 
-## Usage: ./run_playbook.sh [target ssh username] [target ssh password] [target ssh IP] [sp app name] [sp username] [client email] [wp password]
+## Usage: ./run_playbook.sh [target ssh username] [target ssh password] [target ssh IP] [sp app name] [sp username] [client email] [wp password] [template_id]
 
 
 #SSH Remote Script
