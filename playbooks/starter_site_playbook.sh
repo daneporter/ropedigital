@@ -20,10 +20,14 @@ sudo -u $usr_name -i -- wp plugin install elementor --activate --path=/srv/users
 sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/plugins/elementor-pro-2.7.2.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp option update timezone_string "Australia/Melbourne" --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp theme install astra --activate --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/starter-sites/plugins/astra-addon-plugin-2.2.4.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/starter-sites/plugins/astra-premium-sites-1.4.5.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp plugin install astra-sites --activate --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/starter-sites/plugins/astra-addon-plugin.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/starter-sites/plugins/ultimate-elementor.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/starter-sites/plugins/astra-premium-sites.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
+
+#sudo -u $usr_name -i -- wp plugin install astra-sites --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp brainstormforce license activate astra-addon f29d834f5cad15f2845fdc6bf9469875 --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp brainstormforce license activate astra-pro-sites 8c6c089af61dac7dcde1fa27da0fe350 --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp brainstormforce license activate uael eafc56423344b436e641215255dff53a --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_AUTHOR 'Rope Digital' --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_AUTHOR 'Agency Author' --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_AUTHOR_URL 'www.your-website-url.com' --path=/srv/users/$usr_name/apps/$app_name/public/
