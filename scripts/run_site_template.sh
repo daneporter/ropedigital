@@ -33,6 +33,10 @@ EOF
 #Invoke Playbook Setup script on remote host
 #ssh $username@$ip  ". /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id"
 #exit
+ssh $username@$ip << EOF
+. /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id
+EOF
+
 
 exit
 
