@@ -29,7 +29,7 @@ sudo -u $usr_name -i -- wp option update timezone_string "Australia/Melbourne" -
 #Install Required Theme & Plugins
 sudo -u $usr_name -i -- wp theme install astra --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp plugin install elementor --activate --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/plugins/elementor-pro-2.7.2.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/plugins/elementor-pro.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/starter-sites/plugins/astra-addon-plugin.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/starter-sites/plugins/ultimate-elementor.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/starter-sites/plugins/astra-premium-sites.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
@@ -41,24 +41,23 @@ sudo -u $usr_name -i -- wp brainstormforce license activate uael 28d03061107b4b3
 
 #Configure Astra Pro settings and set Elementor as page builder
 sudo -u $usr_name -i -- wp astra-sites page_builder set elementor --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_AUTHOR 'Rope Digital' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_AUTHOR 'Agency Author' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_AUTHOR_URL 'www.your-website-url.com' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_LICENCE 'www.your-get-licence-url.com' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_NAME 'Fastest WP Theme' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_DESCRIPTION 'WordPress theme' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_AUTHOR 'ReadyPress' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_AUTHOR_URL 'https://readypress.io' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_LICENCE 'https://readypress.io' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_NAME 'ReadyPress Starter Theme' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_DESCRIPTION 'Everything you need to create amazing WordPress sites' --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_SCREENSHOT 'www.your-theme-screenshot-url.com' --path=/srv/users/$usr_name/apps/$app_name/public/          
-sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_PRO_NAME 'Pro Addon' --path=/srv/users/$usr_name/apps/$app_name/public/      
-sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_PRO_DESCRIPTION 'Pro Addon extends the features of theme' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_SITES_NAME 'Ready Sites' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_SITES_DESCRIPTION 'Library of Ready sites' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_BSF_LW_SB_NAME 'Custom Sidebar Manager' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_PRO_NAME 'ReadyPress Addons' --path=/srv/users/$usr_name/apps/$app_name/public/      
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_PRO_DESCRIPTION 'Everything required to extend the features of ReadyPress' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_SITES_NAME 'Starter Sites' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_SITES_DESCRIPTION 'Library of Starter sites' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set AST_WL_BSF_LW_SB_NAME 'ReadyPress Sidebar Manager' --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set AST_WL_BSF_LW_SB_DESCRIPTION 'Manage your Sidebar' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_HOOKS_NAME 'Hooks for theme' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_HOOKS_DESCRIPTION 'Use hooks to put custom code' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_BSF_CUSTOM_FONTS_NAME 'My Custom Fonts' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_HOOKS_NAME 'Hooks for ReadyPress' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_HOOKS_DESCRIPTION 'Use hooks for additional custom code' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set AST_WL_BSF_CUSTOM_FONTS_NAME 'Custom Fonts' --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set AST_WL_BSF_CUSTOM_FONTS_DESCRIPTION 'Add custom fonts' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_CUSTOM_TYPEKIT_FONTS_NAME 'My fonts' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set AST_WL_CUSTOM_TYPEKIT_FONTS_NAME 'Typekit fonts' --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set AST_WL_CUSTOM_TYPEKIT_FONTS_DESCRIPTION 'Add custom typekit font' --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set WP_ASTRA_WHITE_LABEL 'true' --path=/srv/users/$usr_name/apps/$app_name/public/
 
