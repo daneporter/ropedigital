@@ -63,7 +63,7 @@ sudo -u $usr_name -i -- wp config set WP_ASTRA_WHITE_LABEL 'true' --path=/srv/us
 
 #Import Starter Site using input paramter
 #Site ID's can be referenced at https://websitedemos.net/wp-json/wp/v2/astra-sites/
-sudo -u $usr_name -i -- wp astra-sites import $template_id --reset --no --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp astra-sites import $template_id --path=/srv/users/$usr_name/apps/$app_name/public/
 
 
 
