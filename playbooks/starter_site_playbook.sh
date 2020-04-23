@@ -34,10 +34,6 @@ sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedig
 sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/starter-sites/plugins/ultimate-elementor.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/starter-sites/plugins/astra-premium-sites.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 
-#Activate Licence for Pro Product Sets
-sudo -u $usr_name -i -- wp brainstormforce license activate astra-addon e08971ab3a707c980f0ca371e303523e --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp brainstormforce license activate astra-pro-sites 44623b583829033d224e16545d8153ca --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp brainstormforce license activate uael 28d03061107b4b38e7a1d7ce7bc283eb --path=/srv/users/$usr_name/apps/$app_name/public/
 
 #Configure Astra Pro settings and set Elementor as page builder
 sudo -u $usr_name -i -- wp astra-sites page_builder set elementor --path=/srv/users/$usr_name/apps/$app_name/public/
@@ -64,6 +60,11 @@ sudo -u $usr_name -i -- wp config set WP_ASTRA_WHITE_LABEL 'true' --path=/srv/us
 #Import Starter Site using input paramter
 #Site ID's can be referenced at https://websitedemos.net/wp-json/wp/v2/astra-sites/
 sudo -u $usr_name -i -- wp astra-sites import $template_id --reset --yes --path=/srv/users/$usr_name/apps/$app_name/public/
+
+#Activate Licence for Pro Product Sets
+sudo -u $usr_name -i -- wp brainstormforce license activate astra-addon e08971ab3a707c980f0ca371e303523e --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp brainstormforce license activate astra-pro-sites 44623b583829033d224e16545d8153ca --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp brainstormforce license activate uael 28d03061107b4b38e7a1d7ce7bc283eb --path=/srv/users/$usr_name/apps/$app_name/public/
 
 #Exit Maintenance Mode
 sudo -u $usr_name -i -- wp maintenance-mode deactivate --path=/srv/users/$usr_name/apps/$app_name/public/
