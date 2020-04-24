@@ -7,6 +7,7 @@ template_id=$3
 
 #Enter Maintenance Mode
 sudo -u $usr_name -i -- wp maintenance-mode activate --path=/srv/users/$usr_name/apps/$app_name/public/
+#New line wget https://raw.githubusercontent.com/daneporter/ropedigital/master/index.html
 
 # Install Starter Site on Target WP - Sudo (Using Astra Starters)
 
@@ -75,4 +76,5 @@ sudo -u $usr_name -i -- wp brainstormforce license activate astra-pro-sites 4462
 sudo -u $usr_name -i -- wp brainstormforce license activate uael 28d03061107b4b38e7a1d7ce7bc283eb --path=/srv/users/$usr_name/apps/$app_name/public/
 
 #Finish
+#new line rm index.html 
 echo done
