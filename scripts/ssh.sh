@@ -27,9 +27,15 @@ chmod 700 *.sh
 ENDSSH
 
 #Invoke Create Admin script on remote host
-sshpass -p $password ssh $username@$ip ". /var/opt/create-admin.sh $app_name $usr_name $email $usr_pw" <<'ENDSSH'
-exit
-ENDSSH
+#sshpass -p $password ssh $username@$ip ". /var/opt/create-admin.sh $app_name $usr_name $email $usr_pw" <<'ENDSSH'
+#exit
+#ENDSSH
+
+#Invoke Create Admin script on remote host
+ssh $username@$ip << EOF
+cd /var/opt/ 
+./create-admin.sh $app_name $usr_name $email $usr_pw
+EOF
 
 #Invoke Environment Setup script on remote host
 sshpass -p $password ssh $username@$ip  ". /var/opt/env-setup.sh $app_name $usr_name" <<'ENDSSH'
