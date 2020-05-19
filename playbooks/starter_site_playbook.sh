@@ -4,6 +4,7 @@
 app_name=$1
 usr_name=$2
 template_id=$3
+usr_email=$4
 
 #Enter Maintenance Mode
 #sudo -u $usr_name -i -- wp maintenance-mode activate --path=/srv/users/$usr_name/apps/$app_name/public/
@@ -76,6 +77,10 @@ sudo -u $usr_name -i -- wp maintenance-mode deactivate --path=/srv/users/$usr_na
 sudo -u $usr_name -i -- wp brainstormforce license activate astra-addon e08971ab3a707c980f0ca371e303523e --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp brainstormforce license activate astra-pro-sites 44623b583829033d224e16545d8153ca --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp brainstormforce license activate uael 28d03061107b4b38e7a1d7ce7bc283eb --path=/srv/users/$usr_name/apps/$app_name/public/
+
+#Update Admin Email
+sudo -u $usr_name -i -- wp option update admin_email $usr_email
+
 
 #Finish
 #new line rm index.html
