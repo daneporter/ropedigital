@@ -50,7 +50,7 @@ sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_AUTHOR_URL 'https://re
 sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_AGENCY_LICENCE 'https://readypress.io' --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_NAME 'ReadyPress Starter Theme' --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_DESCRIPTION 'Everything you need to create amazing WordPress sites' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_SCREENSHOT 'www.your-theme-screenshot-url.com' --path=/srv/users/$usr_name/apps/$app_name/public/          
+sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_SCREENSHOT 'https://app.readypress.io/wp-content/uploads/2020/03/Untitled-design-18-e1583919851274.png' --path=/srv/users/$usr_name/apps/$app_name/public/          
 sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_PRO_NAME 'ReadyPress Addons' --path=/srv/users/$usr_name/apps/$app_name/public/      
 sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_PRO_DESCRIPTION 'Everything required to extend the features of ReadyPress' --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set AST_WL_ASTRA_SITES_NAME 'Starter Sites' --path=/srv/users/$usr_name/apps/$app_name/public/
