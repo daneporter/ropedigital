@@ -25,7 +25,7 @@ sudo -u $usr_name -i -- wp widget delete $(wp widget list sidebar-1 --format=ids
 
 #Cleanup Default WP - Update Site Name, Comments, Permalink, Datetime
 
-sudo -u $usr_name -i -- wp option update blogdescription "Another WordPress Site Created with ReadyPress" --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp option update blogdescription "WordPress Site Created with ReadyPress" --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp option set default_comment_status closed --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp rewrite structure '/%postname%/' --hard --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp option update timezone_string "Australia/Melbourne" --path=/srv/users/$usr_name/apps/$app_name/public/
