@@ -6,6 +6,11 @@ usr_name=$2
 template_id=$3
 usr_email=$4
 
+#Update URL to https:
+sudo -u $usr_name -i -- wp option update home 'https://raymondpary-6492.syd01.readypress.io --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp option update siteurl 'https://raymondpary-6492.syd01.readypress.io --path=/srv/users/$usr_name/apps/$app_name/public/
+
+
 #Enter Maintenance Mode
 #sudo -u $usr_name -i -- wp maintenance-mode activate --path=/srv/users/$usr_name/apps/$app_name/public/
 #New line wget https://raw.githubusercontent.com/daneporter/ropedigital/master/index.html
