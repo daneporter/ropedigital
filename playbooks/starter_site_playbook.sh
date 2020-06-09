@@ -7,8 +7,8 @@ template_id=$3
 usr_email=$4
 
 #Update URL to https:
-sudo -u $usr_name -i -- wp option update home 'https://raymondpary-6492.syd01.readypress.io --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp option update siteurl 'https://raymondpary-6492.syd01.readypress.io --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp option update home 'https://raymondpary-6494.syd01.readypress.io' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp option update siteurl 'https://raymondpary-6494.syd01.readypress.io' --path=/srv/users/$usr_name/apps/$app_name/public/
 
 
 #Enter Maintenance Mode
