@@ -89,7 +89,7 @@ sudo -u $usr_name -i -- wp elementor-pro license activate 39b245eba938b567dbb8cd
 
 
 #Update Admin Email
-sudo -u $usr_name -i -- wp option update admin_email $usr_email
+sudo -u $usr_name -i -- wp option update admin_email $usr_email --path=/srv/users/$usr_name/apps/$app_name/public/
 
 
 #Finish
