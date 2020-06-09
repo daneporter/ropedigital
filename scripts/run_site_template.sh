@@ -19,6 +19,7 @@ usr_name=$5
 email=$6
 usr_pw=$7
 template_id=$8
+sub_domain=$9
 
 
 #Get copies of the latest scripts onto the remote host
@@ -34,7 +35,7 @@ EOF
 #ssh $username@$ip  ". /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id"
 #exit
 ssh $username@$ip << EOF
-. /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id $email
+. /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id $email $sub_domain
 EOF
 
 
