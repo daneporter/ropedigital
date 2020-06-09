@@ -8,7 +8,7 @@ usr_name=$2
 cd /srv/users/$usr_name/apps/$app_name/public/wp-content/
 mkdir mu-plugins
 cd mu-plugins
-wget https://raw.githubusercontent.com/daneporter/ropedigital/master/ropedigital-manager.php
+wget https://raw.githubusercontent.com/daneporter/ropedigital/master/readypress-manager.php
 
 # Download standard htaccess file - Contains appropriate permalink config, browser caching and basic config for Apache hosts
 cd /srv/users/$usr_name/apps/$app_name/public/
