@@ -8,10 +8,9 @@ usr_email=$4
 sub_domain=$5
 
 #Update URL to https:
-#sudo -u $usr_name -i -- wp option update home "$sub_domain" --path=/srv/users/$usr_name/apps/$app_name/public/
-#sudo -u $usr_name -i -- wp option update siteurl "$sub_domain" --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp option update home $sub_domain --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp option update siteurl $sub_domain --path=/srv/users/$usr_name/apps/$app_name/public/
 echo $sub_domain
-echo $5
 
 
 #Enter Maintenance Mode
