@@ -5,10 +5,11 @@ app_name=$1
 usr_name=$2
 template_id=$3
 usr_email=$4
+sub_domain=$5
 
 #Update URL to https:
-sudo -u $usr_name -i -- wp option update home 'https://raymondpary-6494.syd01.readypress.io' --path=/srv/users/$usr_name/apps/$app_name/public/
-sudo -u $usr_name -i -- wp option update siteurl 'https://raymondpary-6494.syd01.readypress.io' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp option update home 'https://$subdomain' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp option update siteurl 'https://$subdomain' --path=/srv/users/$usr_name/apps/$app_name/public/
 
 
 #Enter Maintenance Mode
