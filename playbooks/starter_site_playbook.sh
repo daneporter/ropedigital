@@ -77,7 +77,7 @@ sudo -u $usr_name -i -- wp config set WP_ASTRA_WHITE_LABEL 'true' --path=/srv/us
 
 #Import Starter Site using input paramter
 #Site ID's can be referenced at https://websitedemos.net/wp-json/wp/v2/astra-sites/
-sudo -u $usr_name -i -- wp astra-sites import $template_id --yes --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp astra-sites import $template_id --yes --allow-root --path=/srv/users/$usr_name/apps/$app_name/public/
 
 #Exit Maintenance Mode
 #sudo -u $usr_name -i -- wp maintenance-mode deactivate --path=/srv/users/$usr_name/apps/$app_name/public/
