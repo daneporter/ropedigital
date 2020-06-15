@@ -98,4 +98,4 @@ sudo -u $usr_name -i -- wp option update admin_email $usr_email --path=/srv/user
 #new line rm index.html
 rm /srv/users/$usr_name/apps/$app_name/public/index.html
 echo done
-exit
+
