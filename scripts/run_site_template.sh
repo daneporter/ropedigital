@@ -6,6 +6,7 @@
 ##Change Log##
 ## v0.1 - Initial - Cloned from run_playbook.sh
 ## v0.2 - Changed from using SSHpass to standard SSH after installing keys
+## v0.3 - FUTURE - Update script to include & and run in background
 ################################################################
 
 #SSH Remote Script
