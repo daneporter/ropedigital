@@ -1,7 +1,6 @@
 #!/bin/bash
 # A simple copy script
 
-script ~/outputfile.txt
 
 app_name=$1
 usr_name=$2
@@ -12,7 +11,6 @@ sub_domain=$5
 #Update URL to https:
 sudo -u $usr_name -i -- wp option update home $sub_domain --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp option update siteurl $sub_domain --path=/srv/users/$usr_name/apps/$app_name/public/
-echo $sub_domain
 
 
 # Install Starter Site on Target WP - Sudo (Using Astra Starters)
