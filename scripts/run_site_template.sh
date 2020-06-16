@@ -40,7 +40,7 @@ ssh $username@$ip << EOF
 #. /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id $email $sub_domain
 
 #v.03
-nohup /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id $email $sub_domain &
+. /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id $email $sub_domain &
 EOF
 
 
