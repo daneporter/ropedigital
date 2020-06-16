@@ -1,18 +1,16 @@
 #!/bin/bash
 # A simple  script
 
-app_name=$1
+root_user=$1
 usr_name=$2
-template_id=$3
-usr_email=$4
-sub_domain=$5
+app_name=$3
+ip=$4
 
 
+#Get latest version
+wget -q https://raw.githubusercontent.com/daneporter/ropedigital/master/index.html -O ./index.html
 
-#Enter Maintenance Mode
-#sudo -u $usr_name -i -- wp maintenance-mode activate --path=/srv/users/$usr_name/apps/$app_name/public/
-#New line wget https://raw.githubusercontent.com/daneporter/ropedigital/master/index.html
-wget -q https://raw.githubusercontent.com/daneporter/ropedigital/master/index.html -O /srv/users/$usr_name/apps/$app_name/public/index.html
+#Copy to target
+scp ./index.html $root_user@$ip:/srv/users/$usr_name/apps/$app_name/public/
 
-rm /srv/users/$usr_name/apps/$app_name/public/index.html
 echo done
