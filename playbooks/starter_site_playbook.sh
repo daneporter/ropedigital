@@ -15,12 +15,6 @@ sudo -u $usr_name -i -- wp option update siteurl $sub_domain --path=/srv/users/$
 echo $sub_domain
 
 
-#Enter Maintenance Mode
-#sudo -u $usr_name -i -- wp maintenance-mode activate --path=/srv/users/$usr_name/apps/$app_name/public/
-#New line wget https://raw.githubusercontent.com/daneporter/ropedigital/master/index.html
-wget -q https://raw.githubusercontent.com/daneporter/ropedigital/master/index.html -O /srv/users/$usr_name/apps/$app_name/public/index.html
-
-
 # Install Starter Site on Target WP - Sudo (Using Astra Starters)
 
 #Cleanup Default WP - Remove unwanted Themes and Plugins
@@ -95,7 +89,7 @@ sudo -u $usr_name -i -- wp option update admin_email $usr_email --path=/srv/user
 
 
 #Finish
-#new line rm index.html
+#Remvoe the maintenance HTML
 rm /srv/users/$usr_name/apps/$app_name/public/index.html
 echo done
 
