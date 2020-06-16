@@ -37,9 +37,10 @@ EOF
 #exit
 ssh $username@$ip << EOF
 #v0.2
-. /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id $email $sub_domain
+#. /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id $email $sub_domain
+
 #v.03
-#nohup /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id $email $sub_domain &
+nohup /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id $email $sub_domain &
 EOF
 
 
