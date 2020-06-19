@@ -31,19 +31,13 @@ chmod 700 starter_site_playbook.sh
 EOF
 
 
+#Invoke Playbook Setup script on remote host - Use Screen command to run this in seperate session, and not block.
+#Once this script completes, it will POST to a serive to notify
 
-#Invoke Playbook Setup script on remote host
-#ssh $username@$ip  ". /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id"
-#exit
 ssh $username@$ip << EOF
-#v0.2
-#. /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id $email $sub_domain
-
-#v.03
-. /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id $email $sub_domain &
+screen -d -m /var/opt/starter_site_playbook.sh $app_name $usr_name $template_id $email $sub_domain
 EOF
 
 
+
 exit
-
-
