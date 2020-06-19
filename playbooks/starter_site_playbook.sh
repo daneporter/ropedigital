@@ -86,8 +86,13 @@ sudo -u $usr_name -i -- wp astra-sites import $template_id --user=1 --yes --path
 sudo -u $usr_name -i -- wp option update admin_email $usr_email --path=/srv/users/$usr_name/apps/$app_name/public/
 
 
-#Finish
 #Remvoe the maintenance HTML
 rm /srv/users/$usr_name/apps/$app_name/public/index.html
+
+#Notify of completion
+curl -d '{ "status": "done" }' \
+  -H "Content-Type: application/json" \
+  https://enmjwjov0cwwl.x.pipedream.net/
+
 echo done
 
