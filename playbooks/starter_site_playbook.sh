@@ -81,6 +81,9 @@ sudo -u $usr_name -i -- wp astra-sites import $template_id --user=1 --yes --path
 #sudo -u $usr_name -i -- wp brainstormforce license activate uael 28d03061107b4b38e7a1d7ce7bc283eb --path=/srv/users/$usr_name/apps/$app_name/public/
 #sudo -u $usr_name -i -- wp elementor-pro license activate 39b245eba938b567dbb8cdf095ec447f --path=/srv/users/$usr_name/apps/$app_name/public/
 
+#Update All Plugins & Themes after install
+sudo -u $usr_name -i -- wp plugin update --all --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp theme update --all --path=/srv/users/$usr_name/apps/$app_name/public/
 
 #Update Admin Email
 sudo -u $usr_name -i -- wp option update admin_email $usr_email --path=/srv/users/$usr_name/apps/$app_name/public/
