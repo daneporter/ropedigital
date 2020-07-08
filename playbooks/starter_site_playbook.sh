@@ -95,7 +95,7 @@ rm /srv/users/$usr_name/apps/$app_name/public/index.html
 #Notify of completion
 curl -d '{ "status": "done", "app_name":"'$1'","usr_name":"'$2'","template_id":"'$3'","usr_email":"'$4'","sub_domain":"'$5'"}' \
   -H "Content-Type: application/json" \
-  https://enmjwjov0cwwl.x.pipedream.net/
+  https://hook.integromat.com/3cn3x34k83qh570p0kphekhfs26hzqb2
 
 echo done
 
