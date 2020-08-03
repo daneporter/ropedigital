@@ -67,6 +67,20 @@ sudo -u $usr_name -i -- wp config set AST_WL_CUSTOM_TYPEKIT_FONTS_NAME 'Typekit 
 sudo -u $usr_name -i -- wp config set AST_WL_CUSTOM_TYPEKIT_FONTS_DESCRIPTION 'Add custom typekit font' --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp config set WP_ASTRA_WHITE_LABEL 'true' --path=/srv/users/$usr_name/apps/$app_name/public/
 
+#White Label UAEL
+sudo -u $usr_name -i -- wp config set UAEL_WL_AUTHOR 'ReadyPress' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set UAEL_WL_AUTHOR_URL 'https://readypress.io' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set UAEL_WL_PLUGIN_NAME 'ReadyPress Extras' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set UAEL_WL_PLUGIN_SHORT_NAME 'Extras' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set UAEL_WL_PLUGIN_DESCRIPTION '35+ widgets to enhance your ReadyPress site' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set UAEL_WL_REPLACE_LOGO 'enable' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set UAEL_WL_KNOWLEDGEBASE 'disable' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set UAEL_WL_SUPPORT 'disable' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set UAEL_WL_BETA_UPDATE_BOX 'disable' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set UAEL_WL_INTERNAL_HELP_LINKS 'disable' --path=/srv/users/$usr_name/apps/$app_name/public/
+sudo -u $usr_name -i -- wp config set WP_UAEL_WL 'true' --path=/srv/users/$usr_name/apps/$app_name/public/
+
+
 #Import Starter Site using input paramter
 #Site ID's can be referenced at https://websitedemos.net/wp-json/wp/v2/astra-sites/
 sudo -u $usr_name -i -- wp astra-sites import $template_id --user=1 --yes --path=/srv/users/$usr_name/apps/$app_name/public/
