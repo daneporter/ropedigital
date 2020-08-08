@@ -26,8 +26,8 @@ sub_domain=$9
 #Get copies of the latest scripts onto the remote host
 ssh $username@$ip << EOF
 cd /var/opt/ 
-wget -q https://raw.githubusercontent.com/daneporter/ropedigital/master/playbooks/starter_site_playbook_no_template.sh -O starter_site_playbook.sh
-chmod 700 starter_site_playbook.sh
+wget -q https://raw.githubusercontent.com/daneporter/ropedigital/master/playbooks/starter_site_playbook_no_template.sh -O starter_site_playbook_no_template.sh
+chmod 700 starter_site_playbook_no_template.sh
 EOF
 
 
