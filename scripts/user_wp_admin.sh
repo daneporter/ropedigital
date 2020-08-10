@@ -35,7 +35,7 @@ EOF
 #Invoke Create Admin script on remote host
 ssh $username@$ip << EOF
 cd /var/opt/ 
-./create-admin.sh $app_name $usr_name $email $usr_pw $site_name
+./create-admin.sh $app_name $usr_name $email $usr_pw blah
 EOF
 
 exit
