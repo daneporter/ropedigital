@@ -15,11 +15,12 @@
 
 #V2 - No password
 
-ip=$1
-app_name=$2
-usr_name=$3
-email=$4
-usr_pw=$5
+username=$1
+ip=$2
+app_name=$3
+usr_name=$4
+email=$5
+usr_pw=$6
 
 #Get copies of the latest scripts onto the remote host
 
