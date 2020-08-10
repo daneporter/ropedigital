@@ -21,6 +21,7 @@ app_name=$3
 usr_name=$4
 email=$5
 usr_pw=$6
+site_name=$7
 
 #Get copies of the latest scripts onto the remote host
 
@@ -34,7 +35,7 @@ EOF
 #Invoke Create Admin script on remote host
 ssh $username@$ip << EOF
 cd /var/opt/ 
-./create-admin.sh $app_name $usr_name $email $usr_pw
+./create-admin.sh $app_name $usr_name $email $usr_pw $site_name
 EOF
 
 exit
