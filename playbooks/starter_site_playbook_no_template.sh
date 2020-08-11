@@ -113,4 +113,3 @@ curl -d '{ "status": "done", "app_name":"'$1'","usr_name":"'$2'","template_id":"
 
 echo done
 
-"app_name":"$1","usr_name":"$2","template_id":"$3","usr_email":"$4","sub_domain":"$5"
