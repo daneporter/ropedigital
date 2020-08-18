@@ -41,7 +41,11 @@ sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedig
 sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/starter-sites/plugins/ultimate-elementor.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp plugin install "https://github.com/daneporter/ropedigital/raw/master/starter-sites/plugins/astra-premium-sites.zip" --activate --path=/srv/users/$usr_name/apps/$app_name/public/
 
-#Activate Licence for Pro Product Sets
+#Rank Math SEO Plugin
+sudo -u $usr_name -i -- wp plugin install seo-by-rank-math --activate --path=/srv/users/$usr_name/apps/$app_name/public/
+
+#Activate Licence for Pro Prod
+uct Sets
 sudo -u $usr_name -i -- wp brainstormforce license activate astra-addon e08971ab3a707c980f0ca371e303523e --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp brainstormforce license activate astra-pro-sites 44623b583829033d224e16545d8153ca --path=/srv/users/$usr_name/apps/$app_name/public/
 sudo -u $usr_name -i -- wp brainstormforce license activate uael 28d03061107b4b38e7a1d7ce7bc283eb --path=/srv/users/$usr_name/apps/$app_name/public/
