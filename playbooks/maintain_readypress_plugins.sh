@@ -12,6 +12,7 @@ wp brainstormforce license activate uael 28d03061107b4b38e7a1d7ce7bc283eb
 wp plugin install "https://github.com/daneporter/ropedigital/raw/master/starter-sites/plugins/elementor-pro.zip" --activate
 wp elementor-pro license activate 39b245eba938b567dbb8cdf095ec447f
 
+sleep 5
 
 
 wp plugin update astra-addon elementor header-footer-elementor elementor-pro astra-pro-sites ultimate-elementor wpforms-lite
